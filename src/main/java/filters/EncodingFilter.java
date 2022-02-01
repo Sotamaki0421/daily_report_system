@@ -15,7 +15,7 @@ import javax.servlet.http.HttpFilter;
  * Servlet Filter implementation class EncodingFilter
  */
 @WebFilter("/*")
-public class EncodingFilter extends HttpFilter implements Filter {
+public class EncodingFilter implements Filter {
 
     /**
      * @see HttpFilter#HttpFilter()
