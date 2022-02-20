@@ -59,7 +59,7 @@ public class FrontController extends HttpServlet {
         try {
             // リクエストからパラメータ"action"の値を取得(例："Employee", "Report")
             String actionString = request.getParameter(ForwardConst.ACT.getValue());
-
+//            System.out.println(actionString);
             // 該当するActionオブジェクトを作成（例：リクエストからパラメータ action=Employee の場合、actions.EmployeeActionオブジェクト）
             type = Class.forName(String.format("actions.%sAction", actionString));
 
@@ -67,6 +67,7 @@ public class FrontController extends HttpServlet {
             action = (ActionBase) (type.asSubclass(ActionBase.class)
                     .getDeclaredConstructor()
                     .newInstance());
+
         } catch (ClassNotFoundException
                 | InstantiationException
                 | IllegalAccessException
