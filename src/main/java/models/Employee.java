@@ -49,7 +49,7 @@ public class Employee {
     @Id
     @Column(name = JpaConst.EMP_COL_ID)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     /**
      * 社員番号
