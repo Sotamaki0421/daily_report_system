@@ -122,6 +122,11 @@ public class EmployeeAction extends ActionBase {
         }
     }
 
+    /**
+     * 詳細画面を表示する
+     * @throws ServletException
+     * @throws IOException
+     */
     public void show() throws ServletException, IOException {
 
         // idを条件に従業員データを取得する
@@ -140,6 +145,11 @@ public class EmployeeAction extends ActionBase {
         forward(ForwardConst.FW_EMP_SHOW);
     }
 
+    /**
+     * 編集画面を表示する
+     * @throws ServletException
+     * @throws IOException
+     */
     public void edit() throws ServletException, IOException {
 
         // idを条件に従業員データを取得する
