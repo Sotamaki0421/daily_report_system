@@ -169,6 +169,11 @@ public class EmployeeAction extends ActionBase {
         forward(ForwardConst.FW_EMP_EDIT);
     }
 
+    /**
+     * 論理削除を行う
+     * @throws ServletException
+     * @throws IOException
+     */
     public void update() throws ServletException, IOException {
 
         // CSRF対策 tokenのチェック
